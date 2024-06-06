@@ -1,0 +1,66 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #c3f5a5; /* Fondo verde claro */
+}
+
+table {
+  width: 100%;
+  margin: 2rem auto;
+  border: 4px double #1f1e1e; /* Borde doble y más ancho */
+  border-collapse: collapse;
+  background-color: #ffffff; /* Fondo blanco */
+  animation: fadeInUp 1s ease-in-out; /* Animación para la tabla */
+  transition: transform 0.3s ease-in-out; /* Transición para cambios */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 2px double #141414; /* Borde doble y más ancho */
+  transition: background-color 0.3s ease-in-out; /* Transición suave para colores */
+}
+
+th {
+  background-color: #b7fc8f; /* Verde claro */
+  color: #333; /* Texto oscuro para mayor contraste */
+}
+
+td:hover {
+  background-color: #f0f0f0; /* Color de fondo al hacer hover */
+}
+
+.sold-out {
+  color: red;
+}
+
+.card {
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra negra */
+  border: 4px double #1f1e1d; /* Borde doble y más ancho */
+  border-radius: 8px;
+  animation: fadeInUp 1s ease-in-out; /* Animación para las tarjetas */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más profunda al hacer hover */
+}
+
+.card-title {
+  font-size:
