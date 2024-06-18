@@ -13,33 +13,33 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #c3f5a5; /* Fondo verde claro */
+  background-color: #c3f5a5;
 }
 
 table {
   width: 100%;
   margin: 2rem auto;
-  border: 4px double #1f1e1e; /* Borde doble y más ancho */
+  border: 4px double #1f1e1e;
   border-collapse: collapse;
-  background-color: #ffffff; /* Fondo blanco */
-  animation: fadeInUp 1s ease-in-out; /* Animación para la tabla */
-  transition: transform 0.3s ease-in-out; /* Transición para cambios */
+  background-color: #ffffff;
+  animation: fadeInUp 1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 th, td {
   padding: 12px;
   text-align: left;
-  border: 2px double #141414; /* Borde doble y más ancho */
-  transition: background-color 0.3s ease-in-out; /* Transición suave para colores */
+  border: 2px double #141414;
+  transition: background-color 0.3s ease-in-out;
 }
 
 th {
-  background-color: #b7fc8f; /* Verde claro */
-  color: #333; /* Texto oscuro para mayor contraste */
+  background-color: #b7fc8f;
+  color: #333;
 }
 
 td:hover {
-  background-color: #f0f0f0; /* Color de fondo al hacer hover */
+  background-color: #f0f0f0;
 }
 
 .sold-out {
@@ -49,18 +49,18 @@ td:hover {
 .card {
   padding: 1.5rem;
   margin-top: 2rem;
-  background-color: #ffffff; /* Fondo blanco */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra negra */
-  border: 4px double #1f1e1d; /* Borde doble y más ancho */
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  animation: fadeInUp 1s ease-in-out; /* Animación para las tarjetas */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves */
+  animation: fadeInUp 1s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Efecto de elevación al hacer hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más profunda al hacer hover */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card-title {
-  font-size:
+  font-size: 1.5rem; 
+}
