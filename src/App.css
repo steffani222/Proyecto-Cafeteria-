@@ -1,11 +1,11 @@
-@keyframes fadeInUp {
+@keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-20px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -13,54 +13,82 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #c3f5a5;
+  background-color: #f0f4f8;
 }
 
 table {
   width: 100%;
   margin: 2rem auto;
-  border: 4px double #1f1e1e;
+  border: 1px solid #dedede;
   border-collapse: collapse;
   background-color: #ffffff;
-  animation: fadeInUp 1s ease-in-out;
-  transition: transform 0.3s ease-in-out;
+  animation: fadeInLeft 1s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
-  padding: 12px;
+  padding: 16px;
   text-align: left;
-  border: 2px double #141414;
+  border: 1px solid #e0e0e0;
   transition: background-color 0.3s ease-in-out;
 }
 
 th {
-  background-color: #b7fc8f;
-  color: #333;
+  background-color: #4a90e2;
+  color: #ffffff;
 }
 
 td:hover {
-  background-color: #f0f0f0;
+  background-color: #f5f5f5;
 }
 
 .sold-out {
-  color: red;
+  color: #e74c3c;
+  font-weight: bold;
 }
 
 .card {
-  padding: 1.5rem;
+  padding: 2rem;
   margin-top: 2rem;
   background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  animation: fadeInUp 1s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  animation: fadeInLeft 1s ease-in-out;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
-  font-size: 1.5rem; 
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #357abd;
 }
