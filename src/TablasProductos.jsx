@@ -16,14 +16,14 @@ function TablaProductos({ productos }) {
       </thead>
       <tbody>
         {categorias.map(categoria => (
-          <React.Fragment key={categoria}>
+          <>
             <FilaCategoria categoria={categoria} />
             {productos
               .filter(producto => producto.categoria === categoria)
               .map(producto => (
                 <FilaProducto key={producto.nombre} producto={producto} />
               ))}
-          </React.Fragment>
+         </>
         ))}
       </tbody>
     </table>
